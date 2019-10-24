@@ -18,18 +18,60 @@
         <!-- <h2>Hello JQuery World</h2> -->
         <p>auto changing on window change</p>
         <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="show-data"></div>
+                <hr>
+                <form action="" method="get">
+                    <div class="form-group">
+                      <label for="">Get text from input</label>
+                      <input type="text" class="form-control" name="get_text_name" id="get-text" aria-describedby="helpId" placeholder="enter soem text"> 
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+
         <div class="gallery">
             <div class="row">
-                    <div class="col-sm-4"><img src="img/gom.jpg" alt=""></div>
-                    <div class="col-sm-4"><img src="img/lily.jpg" alt=""></div>
-                    <div class="col-sm-4"><img src="img/suburban.jpg" alt=""></div>
-                </div>
+                <div class="col-sm-4"><img src="img/gom.jpg" alt=""></div>
+                <div class="col-sm-4"><img src="img/lily.jpg" alt=""></div>
+                <div class="col-sm-4"><img src="img/suburban.jpg" alt=""></div>
             </div> 
         </div>
+   
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="text-file">
+                Hello Text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, dolore exercitationem quia consequatur beatae est nemo corrupti provident molestiae impedit. Hic unde vero nesciunt sint soluta consectetur perspiciatis illo tempora.
+            </div>
+            <button id="mybtn" class="btn btn-primary">Show Hide</button>
+        </div>
     </div>
+    <hr>
     
+    </div>
     <script>
         $(document).ready(function(){
+            $('#mybtn').click(function (){
+               $('.text-file').toggle('slow');
+            });
+
+            $('.')
+            // $('*') //select all elements
+            // $(this) //select current elements
+            // $('p.intro') //select all p elements with class intro
+            // $('p:first') //select the first p element 
+            // $('ul li:first') //select first <li> element of first <ul>
+            // $('ul li:first-child') //select first <li> element of every <ul>
+            // $("[href]") //select all elements with an href attribute
+            // $("a[target='_blank']"); //select all <a> element with a target attribute value equal to "_blank"
+            // $(":button") //select all <button> elements and <input> elements of type = "button"
+            // $("tr:even"); //select all even <tr> elements
+            // $("tr:odd");//select all odd <tr> elements
+            // jquery selector teaster
+            // https://www.w3schools.com/jquery/trysel.asp
 
         });
     </script>
